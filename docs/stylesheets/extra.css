@@ -1,0 +1,27 @@
+/* Apply rounding to all images inside Markdown content */
+.md-content img {
+    border-radius: 5px;
+    border: 1px solid #ADD8E6;
+    /* Light blue border */
+    padding: 2px;
+    /* Optional: Adds slight spacing inside
+}
+
+/* Exclude specific images like logos, favicons, and Material UI icons */
+    .md-header img,
+    /* Header logos */
+    .md-footer img,
+    /* Footer logos */
+    .md-sidebar img,
+    /* Sidebar icons */
+    .md-nav img,
+    /* Navigation icons */
+    img[alt~="logo"],
+    /* Any image with "logo" in the alt text */
+    img[alt~="favicon"]
+
+    /* Any image with "favicon" in the alt text */
+        {
+        border-radius: 0;
+        /* Keep them square */
+    }

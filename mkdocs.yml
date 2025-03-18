@@ -1,0 +1,126 @@
+site_name: BI Concepts - Snowflake Marketplace Guide
+site_url: https://svc-bi-concepts.github.io/bi-concepts-snowflake
+theme:
+  name: material
+  font:
+    text: "Open Sans"
+    code: "Roboto Mono"
+  logo: assets/images/BI_Concepts_logo_graphic_color.png
+  favicon: assets/images/favicon.ico
+
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: blue
+      accent: deep blue
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+  features:
+    # Content Editing & Viewing Features
+    - content.action.edit # Adds an "Edit this page" button (requires repo_url)
+    - content.action.view # Adds a "View source" button (requires repo_url)
+
+    # Code Block Enhancements
+    - content.code.annotate # Allows inline code annotations with comments
+    - content.code.copy # Adds a "Copy to clipboard" button for code blocks
+
+    # UI Enhancements & Navigation
+    - content.tooltips # Enables tooltips for abbreviations and other elements
+    - navigation.tabs # Displays main navigation as tabs
+    - navigation.sections # Groups related pages into collapsible sections in the sidebar
+    - navigation.footer # Adds previous/next buttons at the bottom of pages
+    - navigation.indexes # Enables automatic index pages for sections
+    - navigation.top # Shows a "Back to top" button when scrolling down
+    - navigation.tracking # Highlights active navigation items as the user scrolls
+
+    # Search Enhancements
+    - search.highlight # Highlights search results in the document
+    - search.share # Adds sharing options to search results
+    - search.suggest # Provides search suggestions while typing
+
+    # Table of Contents (TOC)
+    - toc.follow # Keeps the table of contents visible while scrolling
+
+markdown_extensions:
+  # Code Highlighting & Formatting
+  - pymdownx.highlight: # Enables syntax highlighting for code blocks
+      anchor_linenums: true # Allows linking to specific line numbers in code
+  - pymdownx.inlinehilite # Enables inline code highlighting
+  - pymdownx.snippets # Allows including external Markdown snippets
+
+  # Admonitions & Expandable Sections
+  - admonition # Enables callouts (!!! note, !!! warning, etc.)
+  - pymdownx.details # Enables collapsible content sections (??? note)
+
+  # Math & Equations
+  - pymdownx.arithmatex: # Enables LaTeX-style math equations
+      generic: true
+
+  # Footnotes & References
+  - footnotes # Enables footnotes with [^1] notation
+
+  # Advanced Code Blocks & Diagrams
+  - pymdownx.superfences # Enhances code blocks with nested fences
+  - pymdownx.superfences: # Custom diagram support (Mermaid)
+      custom_fences:
+        - name: mermaid # Enables Mermaid.js for flowcharts and diagrams
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # Text Formatting Enhancements
+
+
+  - pymdownx.mark # Enables text highlighting with ==yellow== syntax
+  - attr_list # Allows adding attributes (e.g., image sizing, class names)
+  - pymdownx.blocks.caption # Enables captions for code blocks and tables
+
+  # Emojis
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator:
+        !!python/name:material.extensions.emoji.to_svg # Markdown inside HTML
+
+
+  - md_in_html # Allows using Markdown inside raw HTML blocks
+
+  # Tabs for Code & Content Sections
+  - pymdownx.tabbed:
+      alternate_style: true # Enables tabbed content sections with better styling
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/benjamin-saladin
+    - icon: fontawesome/brands/github
+      link: https://github.com/svc-bi-concepts
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: |
+  &copy; 2025 <a href="https://www.bi-concepts.ch/team/benjamin-saladin"  target="_blank" rel="noopener">Benjamin Saladin</a> | <a href="https://www.bi-concepts.ch"  target="_blank" rel="noopener">BI Concepts</a>
+
+nav:
+  - Home: index.md
+  - BI Concepts:
+      - Introduction: bi-concepts/introduction.md
+      - Data Modeling: bi-concepts/data-modeling.md
+      - Data Visualization: bi-concepts/data-visualization.md
+      - Performance Optimization: bi-concepts/performance.md
+  - Snowflake Marketplace:
+      - Overview: marketplace/overview.md
+      - Swiss Calendar: marketplace/swiss-calendar.md
+      - Finding Datasets: marketplace/finding-datasets.md
+      - Acquiring Datasets: marketplace/acquiring-datasets.md
+      - Using Datasets: marketplace/using-datasets.md
+      - Example Projects: marketplace/example-projects.md
+  - Resources: resources.md
