@@ -202,17 +202,29 @@ ORDER BY HOLIDAY_COUNT DESC;
 Below are some real-world scenarios where the Swiss Holiday & Calendar Dataset proves invaluable:
 
 1. **Financial Reconciliation**
-   - Example: Reconciling Bexio accounting entries with UBS bank transactions, ensuring that transaction dates align with official business days.
+    
+    - Example: Reconciling Bexio accounting entries with UBS bank transactions, ensuring that transaction dates align with official business days.
+
 2. **Demand Forecasting**
-   - Example: A retail chain adjusts inventory before Swiss National Day, predicting a surge in sales due to holiday-related shopping.
+
+    - Example: A retail chain adjusts inventory before Swiss National Day, predicting a surge in sales due to holiday-related shopping.
+
 3. **Compliance & Reporting**
-   - Example: A payroll department schedules salary transfers around public holidays, ensuring employees are paid on time and regulatory filings are not delayed.
+
+    - Example: A payroll department schedules salary transfers around public holidays, ensuring employees are paid on time and regulatory filings are not delayed.
+
+
 4. **Marketing Campaign Optimization**
-   - Example: An e-commerce platform launches holiday-specific promotions to boost sales, targeting consumers before and during key Swiss holidays.
+
+    - Example: An e-commerce platform launches holiday-specific promotions to boost sales, targeting consumers before and during key Swiss holidays.
+
 5. **Supply Chain Coordination**
-   - Example: A logistics firm aligns deliveries to avoid holiday closures, reducing potential backlogs and ensuring smooth operations.
+
+       - Example: A logistics firm aligns deliveries to avoid holiday closures, reducing potential backlogs and ensuring smooth operations.
+
 6. **Resource & Workforce Planning**
-   - Example: A manufacturing plant uses holiday data to schedule maintenance on days when most workers are off, minimizing production downtime.
+
+      - Example: A manufacturing plant uses holiday data to schedule maintenance on days when most workers are off, minimizing production downtime.
 
 ---
 
@@ -224,3 +236,5 @@ By leveraging the Swiss Holiday & Calendar Dataset, businesses can:
 - Optimize strategic decisions across forecasting, staffing, marketing, and more.
 
 Whether you're planning large-scale projects or simply need to keep an eye on upcoming holidays, this dataset provides the timely, precise information you need to succeed in the Swiss market.
+
+If you need more help in data modelling or data warehousing, contact us through our [website](https://www.bi-concepts.ch/contact){:target="_blank" rel="noopener"}.
